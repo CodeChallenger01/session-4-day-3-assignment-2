@@ -11,10 +11,10 @@
           **4.neCheck**
           **5.eqCheck**      
 **Step 5:** Now create a **Driver scala file and** inside that file creat main object and inside it take to list and create object of **EqualityInScala[Int]** and call all the 5 methods and **check exception handling** and print the result if it Successfull.   
-**Step 8:** After that add the scalatest dependencies in build.sbt file    
-**Step 9:** Create a **Test Class in** src/test/scala/. Inside the test class extend the AnyFlatSpec with Matchers Class and import the scalatest package in that test class.  
-**Step 10:** Inside the test class create instance of Class in each test case with **different scenario and check with assert. **   
-**Step 11:** In terminal **run the command sbt test** it show the result that test case is **passed or fail.**
+**Step 6:** After that add the scalatest dependencies in build.sbt file    
+**Step 7:** Create a **Test Class in** src/test/scala/. Inside the test class extend the AnyFlatSpec with Matchers Class and import the scalatest package in that test class.  
+**Step 8:** Inside the test class create instance of Class in each test case with **different scenario and check with assert. **   
+**Step 9:** In terminal **run the command sbt test** it show the result that test case is **passed or fail.**
   
   **OUTPUT
 sbt compile & sbt run**
