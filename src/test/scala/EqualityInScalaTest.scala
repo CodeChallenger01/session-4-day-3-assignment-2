@@ -17,19 +17,19 @@ class EqualityInScalaTest extends AnyFlatSpec {
 
   /* To checking with Integer type list by .equals(), ==, !=, ne, eq */
   ".equals()" should "match with true,true on list of Integer" in {
-    val actualOutput = testIntegerObj.equalsCheck(firstIntegerList, secondIntegerList)
+    val actualOutput = testIntegerObj.equalsCheck(firstIntegerList.head, secondIntegerList.head)
     val expectedOutput = (true, true)
     expectedOutput shouldBe actualOutput
   }
 
   "==" should "match with true,true on list of Integer" in {
-    val actualOutput = testIntegerObj.equalsEqualsCheck(firstIntegerList, secondIntegerList)
+    val actualOutput = testIntegerObj.equalsEqualsCheck(firstIntegerList.head, secondIntegerList.head)
     val expectedOutput = (true, true)
     expectedOutput shouldBe actualOutput
   }
 
   "!=" should "match with false, false on list of Integer" in {
-    val actualOutput = testIntegerObj.notEqualsCheck(firstIntegerList, secondIntegerList)
+    val actualOutput = testIntegerObj.notEqualsCheck(firstIntegerList.head, secondIntegerList.head)
     val expectedOutput = (false, false)
     expectedOutput shouldBe actualOutput
   }
@@ -49,19 +49,19 @@ class EqualityInScalaTest extends AnyFlatSpec {
   /* CHECKING WITH STRING TYPE VALUE */
   /* To checking with String type list by .equals(), ==, !=, ne, eq */
   ".equals()" should "match with true,true on  String" in {
-    val actualOutput = testStringObj.equalsCheck(firstString, secondString)
+    val actualOutput = testStringObj.equalsCheck(firstString.head, secondString.head)
     val expectedOutput = (true, true)
     expectedOutput shouldBe actualOutput
   }
 
   "==" should "match with true,true on  String" in {
-    val actualOutput = testStringObj.equalsEqualsCheck(firstString, secondString)
+    val actualOutput = testStringObj.equalsEqualsCheck(firstString.head, secondString.head)
     val expectedOutput = (true, true)
     expectedOutput shouldBe actualOutput
   }
 
   "!=" should "match with false,false on  String" in {
-    val actualOutput = testStringObj.notEqualsCheck(firstString, secondString)
+    val actualOutput = testStringObj.notEqualsCheck(firstString.head, secondString.head)
     val expectedOutput = (false, false)
     expectedOutput shouldBe actualOutput
   }
